@@ -23,7 +23,7 @@ const request = fetch("https://dog.ceo/api/breeds/list/all").then(
   }
 );
 
-myButton.addEventListener("click", (evt) => {
+// myButton.addEventListener("click", (evt) => {
   const dogType = dogSelector.selectedOptions[0].value;
   const imgRequest = fetch(
     `https://dog.ceo/api/breed/${dogType}/images/random`
@@ -33,4 +33,4 @@ myButton.addEventListener("click", (evt) => {
       myImage.setAttribute("src", `${data.message}`);
     });
   });
-});
+// });
